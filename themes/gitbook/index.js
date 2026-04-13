@@ -24,7 +24,6 @@ import CategoryItem from './components/CategoryItem'
 import TagItemMini from './components/TagItemMini'
 import ArticleAround from './components/ArticleAround'
 import Comment from '@/components/Comment'
-import TocDrawer from './components/TocDrawer'
 import NotionPage from '@/components/NotionPage'
 import { ArticleLock } from './components/ArticleLock'
 import { Transition } from '@headlessui/react'
@@ -362,8 +361,6 @@ const LayoutSlug = props => {
               <Comment frontMatter={post} />
             </section>
           )}
-
-          <TocDrawer {...props} />
         </div>
       )}
     </>
