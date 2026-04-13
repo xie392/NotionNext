@@ -164,10 +164,10 @@ const Footer = props => {
 
           {/* 右边公司名字 */}
           <div className='md:text-right'>
-            <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
+            <h1 suppressHydrationWarning className='text-xs pt-4 text-light-400 dark:text-gray-400'>
               {siteConfig('TITLE')} {siteConfig('BIO')}
             </h1>
-            <h2> {siteConfig('DESCRIPTION')}</h2>
+            <h2 suppressHydrationWarning> {siteConfig('DESCRIPTION')}</h2>
             {/* 可选备案信息 */}
             {siteConfig('BEI_AN') && (
               <>
